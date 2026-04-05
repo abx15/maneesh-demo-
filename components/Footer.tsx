@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0a0a0a] border-t border-[#2a2a2a] py-8 px-6 md:px-16 flex flex-col md:flex-row justify-between items-center gap-4">
       <div className="text-xs text-[#555555]">
-        © 2025 Maneesh Yadav. All rights reserved.
+        © 2026 Maneesh Yadav. All rights reserved.
       </div>
       
       <a 
