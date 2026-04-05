@@ -2,6 +2,10 @@
 
 A world-class dark portfolio website built with Next.js 15 App Router, Tailwind CSS v3, Framer Motion, and NodeMailer.
 
+## 🌟 Live Demo
+
+[View Live Portfolio](https://your-deployment-url.com) *(Update with actual deployment URL)*
+
 ## 🚀 Features
 
 - **Modern Dark Theme** with premium gold accents
