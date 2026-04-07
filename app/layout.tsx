@@ -1,7 +1,10 @@
-import { Inter } from 'next/font/google'
+import { Inter, Geist } from 'next/font/google'
 import './globals.css'
 import { Toaster } from 'react-hot-toast'
 import VisitorPing from '@/components/VisitorPing'
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -19,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", geist.variable)}>
       <body className={`${inter.className} font-sans antialiased bg-[#080808] text-[#f0f0f0]`}>
         <VisitorPing />
         <Toaster 
