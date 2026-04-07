@@ -39,7 +39,7 @@ export default function About() {
             {/* Main image container */}
             <div className="relative w-64 h-72 md:w-72 md:h-80 rounded-2xl overflow-hidden border border-[#2a2a2a]">
               <Image 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+                src="/maneesh-dalla.jpeg"
                 alt="Maneesh Yadav" 
                 fill 
                 className="object-cover"
