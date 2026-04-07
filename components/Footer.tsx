@@ -65,7 +65,12 @@ export default function Footer() {
         >
           {/* Left: Copyright */}
           <div className="text-[12px] text-[#333]">
-            © 2025 Maneesh Yadav. All rights reserved.
+            &copy; 2026 Maneesh Yadav. All rights reserved.
+          </div>
+
+          {/* Right: Credits */}
+          <div className="text-[12px] text-[#333]">
+            Design and developed by <a href="mailto:arun.builds.tech@gmail.com" className="hover:text-gold transition-colors">Arun Kumar Bind</a>
           </div>
 
           {/* Right: Instagram icon */}
