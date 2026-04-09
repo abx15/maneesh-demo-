@@ -3,11 +3,11 @@ import nodemailer from 'nodemailer'
 
 export async function POST(req: Request) {
   try {
-    const { name, email, phone, instagram, message } = await req.json()
+    const { name, email, phone, message } = await req.json()
 
-    if (!name || !email || !message) {
+    if (!name || !email) {
       return NextResponse.json(
-        { error: 'Name, email, and message are required fields.' },
+        { error: 'Name and email are required fields.' },
         { status: 400 }
       )
     }
@@ -48,10 +48,6 @@ export async function POST(req: Request) {
             <tr>
               <td style="padding: 10px 0; border-bottom: 1px solid #2a2a2a; color: #a0a0a0;">Phone</td>
               <td style="padding: 10px 0; border-bottom: 1px solid #2a2a2a;">${phone || '—'}</td>
-            </tr>
-            <tr>
-              <td style="padding: 10px 0; border-bottom: 1px solid #2a2a2a; color: #a0a0a0;">Instagram</td>
-              <td style="padding: 10px 0; border-bottom: 1px solid #2a2a2a;">${instagram || '—'}</td>
             </tr>
           </table>
           <div style="margin-top: 20px;">

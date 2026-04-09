@@ -23,7 +23,6 @@ export default function Contact() {
       name: formData.get('name'),
       email: formData.get('email'),
       phone: formData.get('phone'),
-      instagram: formData.get('instagram'),
       message: formData.get('message'),
     }
 
@@ -186,7 +185,7 @@ export default function Contact() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-[11px] text-[#666] uppercase tracking-widest mb-2 block font-medium">
-                        Name
+                        Name <span className="text-gold">*</span>
                       </label>
                       <Input
                         name="name"
@@ -197,7 +196,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <label className="text-[11px] text-[#666] uppercase tracking-widest mb-2 block font-medium">
-                        Email
+                        Email <span className="text-gold">*</span>
                       </label>
                       <Input
                         name="email"
@@ -221,18 +220,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  {/* Instagram ID */}
-                  <div>
-                    <label className="text-[11px] text-[#666] uppercase tracking-widest mb-2 block font-medium">
-                      Instagram ID
-                    </label>
-                    <Input
-                      name="instagram"
-                      className="bg-[#1a1a1a] border-[#2a2a2a] text-[#f0f0f0] placeholder:text-[#383838] focus:border-gold/40 focus:ring-1 focus:ring-gold/15 rounded-xl h-11 transition-all duration-200"
-                      placeholder="@your_instagram"
-                    />
-                  </div>
-
+                  
                   {/* Message */}
                   <div>
                     <label className="text-[11px] text-[#666] uppercase tracking-widest mb-2 block font-medium">
@@ -240,7 +228,6 @@ export default function Contact() {
                     </label>
                     <Textarea
                       name="message"
-                      required
                       rows={4}
                       className="bg-[#1a1a1a] border-[#2a2a2a] text-[#f0f0f0] placeholder:text-[#383838] focus:border-gold/40 focus:ring-1 focus:ring-gold/15 rounded-xl resize-none transition-all duration-200"
                       placeholder="Tell me about your project..."
